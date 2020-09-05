@@ -7,10 +7,10 @@ import android.widget.ImageView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-public class ImageAdapter extends PagerAdapter {
+public class GloceryAdapterViewpager extends PagerAdapter {
     Context mContext;
 
-    ImageAdapter(Context context) {
+    GloceryAdapterViewpager(Context context) {
         this.mContext = context;
     }
 

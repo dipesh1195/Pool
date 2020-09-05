@@ -1,33 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_grad"
     android:orientation="vertical"
     android:padding="5dp"
     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="PooL Special"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:orientation="vertical">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/edittext_background"
-            android:id="@+id/imaged"
-            android:padding="5dp"
-            android:src="@drawable/poologo"
-            android:scaleType="fitXY"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPage"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp" />
     </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:paddingLeft="5dp"
+            android:text="Best FastFood"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:orientation="vertical"
         android:id="@+id/recyclerG"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
+        android:paddingLeft="3dp"
         />
 
+    </LinearLayout>
 
-
-</LinearLayout>
+</ScrollView>

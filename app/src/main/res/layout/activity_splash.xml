@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:fontFamily="sans-serif-condensed"
-            android:src="@drawable/logo11"
+            android:src="@drawable/poologo_nob"
             android:scaleType="fitXY"
             android:padding="1dp"
             android:text="@string/jevan_khana"
