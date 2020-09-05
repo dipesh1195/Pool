@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:versionCode="1" android:versionName="0.1" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.example.jkhana" platformBuildVersionCode="28" platformBuildVersionName="9">
-    <uses-sdk android:targetSdkVersion="29"/>
+    package="com.example.jkhana"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9"
+    android:versionCode="1"
+    android:versionName="0.1">
+
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -34,6 +42,8 @@
         <activity android:name="com.example.jkhana.Groceries"/>
         <activity android:label="PooL"
             android:name="com.example.jkhana.MainActivity"/>
-        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.example.jkhana.lifecycle-process"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false" android:multiprocess="true"
+            android:authorities="com.example.jkhana.lifecycle-process"/>
     </application>
 </manifest>

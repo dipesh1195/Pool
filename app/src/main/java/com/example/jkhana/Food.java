@@ -1,5 +1,4 @@
 package com.example.jkhana;
-
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,10 +26,10 @@ public class Food extends AppCompatActivity {
         String str2 = "best in categories";
         String str3 = "500";
         FoodData mFoodData = new FoodData(str, str2, str3, R.drawable.grocerie);
-        FoodData mFoodData1 = new FoodData(str, str2, str3, R.drawable.liqueurs);
+        FoodData mFoodData1 = new FoodData(str, str2, str3, R.drawable.img);
         FoodData mFoodData2 = new FoodData(str, str2, str3, R.drawable.fastffood);
-        FoodData mFoodData3 = new FoodData(str, str2, str3, R.drawable.grocerie);
-        FoodData mFoodData4 = new FoodData(str, str2, str3, R.drawable.grocerie);
+        FoodData mFoodData3 = new FoodData(str, str2, str3, R.drawable.streetfood);
+        FoodData mFoodData4 = new FoodData(str, str2, str3, R.drawable.vejroll);
         this.Foodlist.add(mFoodData);
         this.Foodlist.add(mFoodData1);
         this.Foodlist.add(mFoodData2);
