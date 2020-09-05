@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/my_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="30dp">
+            <ImageView android:id="@+id/logo" android:layout_width="match_parent" android:layout_height="399dp" android:tint="#090c2c" app:srcCompat="@drawable/poologo_nob"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#f8f7f7" android:id="@+id/login" android:background="@drawable/btn_gradient" android:padding="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="25dp" android:layout_marginTop="80dp" android:layout_marginRight="25dp" android:text="Login"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="#f8f7f7" android:id="@+id/register" android:background="@drawable/btn_gradient" android:padding="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_marginRight="25dp" android:text="Signup"/>
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="#ffff" android:gravity="center" android:id="@+id/skip" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_marginRight="25dp" android:layout_marginBottom="40dp" android:text="Skip Login"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

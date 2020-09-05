@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="40dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="155dp" android:layout_height="155dp" android:layout_margin="5dp" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="250dp">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="150dp" android:layout_height="150dp" android:layout_margin="5dp" app:cardCornerRadius="250dp">
+                    <ImageView android:id="@+id/profilepic" android:layout_width="150dp" android:layout_height="150dp" android:layout_margin="5dp" android:src="@drawable/poologo" android:scaleType="fitCenter" android:layout_weight="1" android:contentDescription="TODO"/>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+            <EditText android:gravity="center" android:id="@+id/fullname" android:background="@drawable/edittext_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="Full Name" android:ems="10" android:inputType="textPersonName"/>
+            <EditText android:gravity="center" android:id="@+id/number" android:background="@drawable/edittext_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="+977 0000000000" android:ems="10" android:inputType="phone"/>
+            <EditText android:gravity="center" android:id="@+id/email" android:background="@drawable/edittext_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="abc@mail.com" android:ems="10" android:inputType="textEmailAddress"/>
+            <EditText android:gravity="center" android:id="@+id/password" android:background="@drawable/edittext_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="Password" android:ems="10" android:inputType="textPassword"/>
+            <EditText android:gravity="center" android:id="@+id/confirm_password" android:background="@drawable/edittext_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="10dp" android:hint="Confirm Password" android:ems="10" android:inputType="textPassword"/>
+            <Button android:textStyle="bold" android:textColor="#ffff" android:layout_gravity="center" android:id="@+id/signup" android:background="@drawable/btn_gradient" android:padding="5dp" android:layout_width="150dp" android:layout_height="45dp" android:layout_margin="5dp" android:text="Sign Up"/>
+            <TextView android:gravity="center" android:id="@+id/more" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="-----Login With-----"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_marginLeft="3dp">
+            <ImageButton android:textColor="#ffff" android:id="@+id/facebook_signup" android:background="#673ab7" android:layout_width="45dp" android:layout_height="40dp" android:layout_margin="5dp" android:foreground="@drawable/facebook"/>
+            <ImageButton android:textColor="#ffff" android:id="@+id/google_signup" android:background="#b522c9e6" android:layout_width="45dp" android:layout_height="40dp" android:layout_margin="5dp" android:foreground="@drawable/google" android:text="Google"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="40dp">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Already Have an Account,"/>
+            <TextView android:textColor="#f5063260" android:id="@+id/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Login"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

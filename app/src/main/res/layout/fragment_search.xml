@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:layout_width="155dp" android:layout_height="155dp" app:cardBackgroundColor="#ffffff" app:cardCornerRadius="250dp">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="150dp" android:layout_height="150dp" app:cardCornerRadius="250dp">
+                <ImageView android:layout_width="150dp" android:layout_height="150dp" android:scaleType="centerCrop" app:srcCompat="@drawable/liqueurs"/>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+        <EditText android:id="@+id/editTextTextPersonName" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:hint="Search For Food" android:ems="10" android:inputType="textPersonName"/>
+        <Button android:id="@+id/button" android:layout_width="220dp" android:layout_height="50dp" android:text="search"/>
+    </LinearLayout>
+</LinearLayout>
