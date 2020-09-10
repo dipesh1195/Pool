@@ -1,18 +1,18 @@
 package com.example.jkhana;
 
 import android.os.Bundle;
-import android.os.Handler;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
+
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class Groceries extends AppCompatActivity {
     int currentPage = 0;
@@ -28,26 +28,16 @@ public class Groceries extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groceries);
-        final ViewPager mViewPager = (ViewPager) findViewById(R.id.viewPage);
-        ImageAdapter adapterView = new ImageAdapter(this);
-        mViewPager.setAdapter(adapterView);
-        final Handler handler = new Handler();
-        final Runnable Update = new Runnable() {
-            public void run() {
-                if (currentPage == adapter.getItemCount()-1) {
-                    currentPage = 0;
-                }
-                mViewPager.setCurrentItem(currentPage++, true);
-            }
-        };
 
-        timer = new Timer(); // This will create a new Thread
-        timer.schedule(new TimerTask() { // task to be scheduled
-            @Override
-            public void run() {
-                handler.post(Update);
-            }
-        }, DELAY_MS, PERIOD_MS);
+
+        ImageSlider imgslider = (ImageSlider) findViewById(R.id.slidergloceries);
+        List<SlideModel> slide = new ArrayList<>();
+        slide.add(new SlideModel(R.drawable.grocerie,"Gloceries"));
+        slide.add(new SlideModel(R.drawable.vejroll,"VejRoll"));
+        slide.add(new SlideModel(R.drawable.img,"Gloceries"));
+        slide.add(new SlideModel(R.drawable.streetfood,"StreetFood"));
+        imgslider.setImageList(slide,true)  ;
+
 
         ActionBar supportActionBar = getSupportActionBar();
         this.toolbar = supportActionBar;

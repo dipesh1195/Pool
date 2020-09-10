@@ -4,46 +4,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.jkhana"
-    android:compileSdkVersion="28"
-    android:compileSdkVersionCodename="9"
     platformBuildVersionCode="28"
     platformBuildVersionName="9"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
     android:versionCode="1"
     android:versionName="0.1">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <application android:theme="@style/AppTheme"
-        android:label="PooL"
-        android:icon="@mipmap/ic_launcher"
-        android:testOnly="true"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
         android:allowBackup="true"
-        android:supportsRtl="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PooL"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
-        <activity android:name="com.example.jkhana.Login_activity"/>
-        <activity android:name="com.example.jkhana.Signup_activity"/>
-        <activity android:name="com.example.jkhana.LoginPage"/>
-        <activity android:theme="@style/Theme.MaterialComponents.NoActionBar"
-            android:name="com.example.jkhana.Splash">
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CartNotEmpty"></activity>
+        <activity android:name=".Login_activity" />
+        <activity android:name=".Signup_activity" />
+        <activity android:name=".LoginPage" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.jkhana.Fruits"/>
-        <activity android:name="com.example.jkhana.Liqueurs"/>
-        <activity android:name="com.example.jkhana.Dinner"/>
-        <activity android:name="com.example.jkhana.Nonveg"/>
-        <activity android:name="com.example.jkhana.Lunch"/>
-        <activity android:name="com.example.jkhana.Food"/>
-        <activity android:name="com.example.jkhana.Groceries"/>
-        <activity android:label="PooL"
-            android:name="com.example.jkhana.MainActivity"/>
-        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:exported="false" android:multiprocess="true"
-            android:authorities="com.example.jkhana.lifecycle-process"/>
+        <activity android:name=".Fruits" />
+        <activity android:name=".Liqueurs" />
+        <activity android:name=".Dinner" />
+        <activity android:name=".Nonveg" />
+        <activity android:name=".Lunch" />
+        <activity android:name=".Food" />
+        <activity android:name=".Groceries" />
+        <activity
+            android:name=".MainActivity"
+            android:label="PooL" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.jkhana.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
+
 </manifest>

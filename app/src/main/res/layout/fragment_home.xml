@@ -10,6 +10,228 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/Scroll"
+            android:layout_width="match_parent"
+            android:background="#4D7AD3EA"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_gravity="left"
+                android:id="@+id/lin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linergloc"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/groceries"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/grocerie" />
+
+                    <TextView
+                        android:id="@+id/groceriestext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Groceries"
+                        android:gravity="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearfood"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/fastfood"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fastfood" />
+
+                    <TextView
+                        android:id="@+id/fastfoodtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="FastFood"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlunch"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/lunch"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/lunch" />
+
+                    <TextView
+                        android:id="@+id/lunchtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:text="Lunch"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lineardinner"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/dinner"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/dinner" />
+
+                    <TextView
+                        android:id="@+id/dinnertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Dinner"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearnonveg"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/nonveg"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/nonveg" />
+
+                    <TextView
+                        android:id="@+id/nonvegtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Non-Veg"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearliqueur"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/liqueur"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/liqueurs" />
+
+                    <TextView
+                        android:id="@+id/liqueurtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Liqueur"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearfruits"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/fruits"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fruits" />
+
+                    <TextView
+                        android:id="@+id/fruitstext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fruits"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/fruits" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fruits"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="55dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/fruits" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Fruits"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="27dp"
@@ -20,13 +242,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:orientation="vertical">
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPage"
-                android:layout_width="fill_parent"
-                android:layout_height="180dp" />
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:auto_cycle="true"
+                app:delay="0"
+                app:corner_radius="5"
+                app:period="1000"
+                />
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"

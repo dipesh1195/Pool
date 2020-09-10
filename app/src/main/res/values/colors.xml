@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0E0401</color>
-    <color name="colorPrimaryDark">#0B2220</color>
+    <color name="colorPrimary">#070200</color>
+    <color name="colorPrimaryDark">#010C0B</color>
     <color name="colorAccent">#284E22</color>
     <color name="colorAccent1">#BBD53F</color>
     <color name="lightyellow">#fff2df</color>
     <color name="bottom_nav">#ffddb0</color>
+    <color name="my_menu_unselected_color">#74909E</color>
+    <color name="my_menu_badge_color">#1C1C1B</color>
+
+
 </resources>

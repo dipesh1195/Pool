@@ -1,84 +1,124 @@
 package com.example.jkhana;
-
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-
-//import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
-//import com.smarteist.autoimageslider.IndicatorView.draw.controller.DrawController;
-//import com.smarteist.autoimageslider.SliderAnimations;
-//import com.smarteist.autoimageslider.SliderView;
-
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import java.util.ArrayList;
 import java.util.List;
+import androidx.appcompat.app.ActionBar;
 
 
 public class HomeFragment extends Fragment {
+    int[] sliderImageId ;
+    private ImageView dimage;
+    private TextView dinner;
+    private TextView fastfood;
+    private ImageView fimag;
+    private ImageView frimag;
+    private TextView fruits;
+    private ImageView gimag;
+    private TextView grocerie;
+    private ImageView liimag;
+    private ImageView limag;
+    private TextView liqueur;
+    private TextView lunch;
+    private ImageView nimag;
+    private TextView nonveg;
+    public ActionBar toolbar;
 
-//    SliderView sliderView = v.findViewById(R.id.imageSlider);
-//    ImageAdapter adapter = new ImageAdapter(sliderView);
-//            sliderView.setSliderAdapter(adapter);
-//
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-        return v;
+        ImageSlider imgslider =(ImageSlider) v.findViewById(R.id.slider);
+        List<SlideModel> slide = new ArrayList<>();
+        slide.add(new SlideModel(R.drawable.grocerie,"Gloceries"));
+        slide.add(new SlideModel(R.drawable.vejroll,"VejRoll"));
+        slide.add(new SlideModel(R.drawable.img,"Gloceries"));
+        slide.add(new SlideModel(R.drawable.streetfood,"StreetFood"));
+        imgslider.setImageList(slide,true)  ;
+
+
+        grocerie = (TextView) v.findViewById(R.id.groceriestext);
+        fastfood = (TextView) v.findViewById(R.id.fastfoodtext);
+        lunch = (TextView) v.findViewById(R.id.lunchtext);
+        nonveg = (TextView) v.findViewById(R.id.nonvegtext);
+        dinner = (TextView) v.findViewById(R.id.dinnertext);
+        liqueur = (TextView) v.findViewById(R.id.liqueurtext);
+        fruits = (TextView) v.findViewById(R.id.fruitstext);
+        gimag = (ImageView) v.findViewById(R.id.groceries);
+        fimag = (ImageView) v.findViewById(R.id.fastfood);
+        limag = (ImageView) v.findViewById(R.id.lunch);
+        nimag = (ImageView) v.findViewById(R.id.nonveg);
+        dimage = (ImageView) v.findViewById(R.id.dinner);
+        liimag = (ImageView) v.findViewById(R.id.liqueur);
+        frimag = (ImageView) v.findViewById(R.id.fruits);
+        LinearLayout li = (LinearLayout) v.findViewById(R.id.linergloc);
+        LinearLayout food = (LinearLayout) v.findViewById(R.id.linearfood);
+        LinearLayout lun = (LinearLayout) v.findViewById(R.id.linearlunch);
+        LinearLayout non = (LinearLayout) v.findViewById(R.id.linearnonveg);
+        LinearLayout dinn = (LinearLayout) v.findViewById(R.id.lineardinner);
+        LinearLayout lique = (LinearLayout) v.findViewById(R.id.linearliqueur);
+        LinearLayout frui = (LinearLayout) v.findViewById(R.id.linearfruits);
+
+
+
+
+        li.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Groceries.class));
+                Toast.makeText(getActivity(), "Moving to groceries", Toast.LENGTH_SHORT).show();
+            }
+        });
+        food.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Food.class));
+                Toast.makeText(getActivity(), "Moving to FastFood", Toast.LENGTH_SHORT).show();
+            }
+        });
+        lun.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Lunch.class));
+                Toast.makeText(getActivity(), "Moving to Lunch", Toast.LENGTH_SHORT).show();
+            }
+        });
+        non.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Nonveg.class));
+                Toast.makeText(getActivity(), "Moving to NonVeg", Toast.LENGTH_SHORT).show();
+            }
+        });
+        dinn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Dinner.class));
+                Toast.makeText(getActivity(), "Moving to Dinner",Toast.LENGTH_SHORT ).show();
+
+            }
+        });
+        lique.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Liqueurs.class));
+                Toast.makeText(getActivity(), "Moving to Liqueurs", Toast.LENGTH_SHORT).show();
+            }
+        });
+        frui.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), Fruits.class));
+                Toast.makeText(getActivity(), "Moving to Fruits", Toast.LENGTH_SHORT).show();
+            }
+        });
+         return v;
     }
-//
-//    sliderView = v.findViewById (R.id.imageSlider);
-//    adapter =new ImageAdapter(this);
-//        sliderView.setSliderAdapter(adapter);
-//        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
-//        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
-//        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
-//        sliderView.setIndicatorSelectedColor(Color.WHITE);
-//        sliderView.setIndicatorUnselectedColor(Color.GRAY);
-//        sliderView.setScrollTimeInSec(3);
-//        sliderView.setAutoCycle(true);
-//        sliderView.startAutoCycle();
-//
-//
-//        sliderView.setOnIndicatorClickListener(new DrawController.ClickListener()
-//
-//    {
-//        @Override
-//        public void onIndicatorClicked ( int position){
-//        Log.i("GGG", "onIndicatorClicked: " + sliderView.getCurrentPagePosition());
-//    }
-//    });
-//
-//}
-//
-//    public void renewItems(View view) {
-//        List<SliderItem> sliderItemList = new ArrayList<>();
-//        //dummy data
-//        for (int i = 0; i < 5; i++) {
-//            SliderItem sliderItem = new SliderItem();
-//            sliderItem.setDescription("Slider Item " + i);
-//            if (i % 2 == 0) {
-//                sliderItem.setImageUrl("https://images.pexels.com/photos/929778/pexels-photo-929778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//            } else {
-//                sliderItem.setImageUrl("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-//            }
-//            sliderItemList.add(sliderItem);
-//        }
-//        adapter.renewItems(sliderItemList);
-//    }
-//
-//    public void removeLastItem(View view) {
-//        if (adapter.getCount() - 1 >= 0)
-//            adapter.deleteItem(adapter.getCount() - 1);
-//    }
-//
-//    public void addNewItem(View view) {
-//        SliderItem sliderItem = new SliderItem();
-//        sliderItem.setDescription("Slider Item Added Manually");
-//        sliderItem.setImageUrl("https://images.pexels.com/photos/929778/pexels-photo-929778.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-//        adapter.addItem(sliderItem);
-//    }
-//}
+
 
 }

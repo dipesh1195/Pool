@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Dinner extends AppCompatActivity {
     private ActionBar toolbar;
 
-    /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dinner);
