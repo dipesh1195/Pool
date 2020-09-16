@@ -1,19 +1,26 @@
 package com.example.jkhana;
 
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.ui.AppBarConfiguration;
 
+import com.andremion.floatingnavigationview.FloatingNavigationView;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 public class MainActivity extends AppCompatActivity {
     Fragment fragment = null;
     private ChipNavigationBar chipNavigationBar;
     private AppBarConfiguration mAppBarConfiguration;
     public ActionBar toolbar;
+    private FloatingNavigationView mFloatingNavigationView;
 
 
 
@@ -24,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         chipNavigationBar = findViewById(R.id.menu);
 
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         chipNavigationBar.setItemSelected(R.id.navigation_home, true);
         getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, new HomeFragment()).commit();
 
@@ -53,6 +61,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mFloatingNavigationView = (FloatingNavigationView) findViewById(R.id.floating_navigation_view);
+        mFloatingNavigationView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mFloatingNavigationView.open();
+            }
+        });
+        mFloatingNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item) {
+                Snackbar.make((View) mFloatingNavigationView.getParent(), item.getTitle() + " Selected!", Snackbar.LENGTH_SHORT).show();
+                mFloatingNavigationView.close();
+                return true;
+            }
+        });
+    }
 
+    @Override
+    public void onBackPressed() {
+        if (mFloatingNavigationView.isOpened()) {
+            mFloatingNavigationView.close();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

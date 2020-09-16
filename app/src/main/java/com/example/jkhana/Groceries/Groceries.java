@@ -1,4 +1,4 @@
-package com.example.jkhana;
+package com.example.jkhana.Groceries;
 
 import android.os.Bundle;
 
@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.jkhana.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,9 +40,7 @@ public class Groceries extends AppCompatActivity {
         imgslider.setImageList(slide,true)  ;
 
 
-        ActionBar supportActionBar = getSupportActionBar();
-        this.toolbar = supportActionBar;
-        supportActionBar.setTitle((CharSequence) "PooL groceries");
+
         mrecycler = (RecyclerView) findViewById(R.id.recyclerG);
         mrecycler.setLayoutManager(new GridLayoutManager(this, 1));
         String str = "Groceries";

@@ -1,10 +1,12 @@
-package com.example.jkhana;
+package com.example.jkhana.Groceries;
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
+
+import com.example.jkhana.R;
 
 /* compiled from: GloceAdapter */
 class GloceViewHolder extends ViewHolder {

@@ -23,6 +23,7 @@
         android:label="PooL"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:testOnly="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CartNotEmpty"></activity>
@@ -43,8 +44,8 @@
         <activity android:name=".Dinner" />
         <activity android:name=".Nonveg" />
         <activity android:name=".Lunch" />
-        <activity android:name=".Food" />
-        <activity android:name=".Groceries" />
+        <activity android:name=".fastfood.Food" />
+        <activity android:name=".Groceries.Groceries" />
         <activity
             android:name=".MainActivity"
             android:label="PooL" />

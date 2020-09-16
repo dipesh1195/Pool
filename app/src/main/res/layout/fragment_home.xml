@@ -275,11 +275,27 @@
             android:layout_height="27dp"
             android:paddingLeft="5dp"
             android:text="Today's Special"
+            android:id="@+id/home_text2"
             android:textSize="20sp"
             android:textStyle="bold" />
         <androidx.recyclerview.widget.RecyclerView
             android:orientation="horizontal"
             android:id="@+id/recyclerG1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="3dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:paddingLeft="5dp"
+            android:text="Hunger Freak"
+            android:id="@+id/home_text3"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/recyclerG2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="3dp"

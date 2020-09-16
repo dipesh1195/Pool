@@ -23,7 +23,7 @@ public class LoginPage extends AppCompatActivity {
         register = (Button) findViewById(R.id.register);
         skip = (TextView) findViewById(R.id.skip);
         logo = (ImageView) findViewById(R.id.logo);
-        getSupportActionBar().hide();
+
 
         skip.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {

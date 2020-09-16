@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@drawable/background_grad"
     android:padding="5dp"
@@ -10,7 +11,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/GrocerieCardView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
         android:layout_margin="4dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="3dp"
@@ -22,10 +23,11 @@
 
 
             <ImageView
-                android:id="@+id/gloImage"
+                android:id="@+id/ffoodimage"
                 android:layout_width="match_parent"
                 android:background="@drawable/background_grad"
                 android:layout_height="150dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/grocerie" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,7 +38,7 @@
                 <LinearLayout
                     android:layout_width="266dp"
                     android:layout_height="match_parent"
-                    android:padding="2dp"
+                    android:paddingStart="5dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -54,6 +56,12 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:text="Description" />
+                    <TextView
+                        android:id="@+id/restu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Restaurant Name" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"

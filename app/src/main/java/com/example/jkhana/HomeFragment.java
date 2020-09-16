@@ -9,14 +9,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.jkhana.Groceries.Groceries;
+import com.example.jkhana.fastfood.Food;
+
 import java.util.ArrayList;
 import java.util.List;
-import androidx.appcompat.app.ActionBar;
 
 
 public class HomeFragment extends Fragment {

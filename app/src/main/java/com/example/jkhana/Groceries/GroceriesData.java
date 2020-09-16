@@ -1,4 +1,4 @@
-package com.example.jkhana;
+package com.example.jkhana.Groceries;
 
 public class GroceriesData {
     private String itemDesc;
@@ -13,11 +13,13 @@ public class GroceriesData {
         this.itemImage = itemImage2;
     }
 
-    public String getItemName() {
+    public String getItemName()
+    {
         return this.itemName;
     }
 
-    public String getItemDesc() {
+    public String getItemDesc()
+    {
         return this.itemDesc;
     }
 
@@ -28,7 +30,8 @@ public class GroceriesData {
         return sb.toString();
     }
 
-    public int getItemImage() {
+    public int getItemImage()
+    {
         return this.itemImage;
     }
 }

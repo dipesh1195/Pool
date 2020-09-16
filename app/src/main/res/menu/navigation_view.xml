@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/colorPrimary"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_menu_gallery"
+             android:iconTint="@color/colorAccent"
+             android:title="Cart"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:iconTint="@color/bottom_nav"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_menu_manage"
+            android:iconTint="@color/colorAccent1"
+            android:title="My orders"/>
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_share"
+                android:iconTint="@color/cardview_dark_background"
+                android:title="Setting"/>
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/ic_menu_send"
+                android:iconTint="@color/design_default_color_error"
+                android:title="Terms and Service"/>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:iconTint="@color/colorAccent1"
+                android:title="Feedback and Complaints"/>
+        </menu>
+    </item>
+
+</menu>

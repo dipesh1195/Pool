@@ -38,8 +38,11 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'com.specyci:residemenu:1.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.github.shrikanth7698:Custom-Navigation-Drawer:v0.0.1'
-    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'com.github.andremion:floatingnavigationview:1.2.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
