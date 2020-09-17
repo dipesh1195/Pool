@@ -20,13 +20,15 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="PooL"
+        android:label="POOL"
+        android:largeHeap="true"
+        tools:replace="android:label"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:testOnly="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CartNotEmpty"></activity>
+        <activity android:name=".CartNotEmpty"/>
         <activity android:name=".Login_activity" />
         <activity android:name=".Signup_activity" />
         <activity android:name=".LoginPage" />

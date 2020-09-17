@@ -77,9 +77,11 @@ public class Food extends AppCompatActivity {
                                     String name = object.getString("name");
                                     String desc = object.getString("description");
                                     int price = object.getInt("price");
-                                    String imageurl = object.getString("picture");
+                                    String imageurl= object.getString("picture");
+                                    imageurl = imageurl.trim();
                                     String restuname = object.getString("resturant");
-                                    imgurl ="https://poolnepal.000webhostapp.com/upload/"+imageurl;
+                                    imgurl ="https://poolnepal.000webhostapp.com/upload/".concat(imageurl) ;
+                                    Toast.makeText(Food.this, imgurl, Toast.LENGTH_SHORT).show();
                                     modelImage = new FoodData(name,desc,price,imgurl,restuname);
                                     Foodlist.add(modelImage);
                                     myAdapter.notifyDataSetChanged();

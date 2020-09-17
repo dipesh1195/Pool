@@ -28,7 +28,7 @@ public class FoodAdapter extends Adapter<FoodViewHolder> {
         Glide.with(context).load(itemlist.get(i).getItemImage()).into(holder.image);
         holder.mtitle.setText(((FoodData) this.itemlist.get(i)).getItemName());
         holder.mdesc.setText(((FoodData) this.itemlist.get(i)).getItemDesc());
-        holder.mprice.setText(Integer.toString(((FoodData) this.itemlist.get(i)).getItemPrice()));
+        holder.mprice.setText("Rs. "+Integer.toString(((FoodData) this.itemlist.get(i)).getItemPrice()));
         holder.mrestuname.setText(((FoodData)this.itemlist.get(i)).getRestuname());
 
     }

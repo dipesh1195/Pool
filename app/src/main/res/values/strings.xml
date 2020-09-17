@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">Jkhana</string>
+    <string name="app_name">POOL</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="fresh_and_healthy_food">Made For Food Lovers</string>
-    <string name="jevan_khana">PooL</string>
-    <string name="kart">Kart</string>
-    <string name="me">Me</string>
+    <string name="jevan_khana">POOL</string>
+    <string name="Cart">Kart</string>
     <string name="title_activity_side_nav">Side_nav</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -5,9 +5,14 @@
     <color name="colorAccent">#284E22</color>
     <color name="colorAccent1">#BBD53F</color>
     <color name="lightyellow">#fff2df</color>
-    <color name="bottom_nav">#ffddb0</color>
+    <color name="backgrd">#FF5964C8</color>
     <color name="my_menu_unselected_color">#74909E</color>
     <color name="my_menu_badge_color">#1C1C1B</color>
+    <color name="btn1_color">#D34DAFBC</color>
+    <color name="btn2">#C9DFA956</color>
+    <color name="btn3">#83A878DF</color>
+    <color name="btn4">#A42ECF1B</color>
+
 
 
 </resources>

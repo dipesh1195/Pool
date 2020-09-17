@@ -48,7 +48,7 @@ public class Groceries extends AppCompatActivity {
         String str3 = "500";
         GroceriesData mGroceriesData = new GroceriesData(str, str2, str3, R.drawable.grocerie);
         GroceriesData mGroceriesData1 = new GroceriesData(str, str2, str3, R.drawable.liqueurs);
-        GroceriesData mGroceriesData2 = new GroceriesData(str, str2, str3, R.drawable.fastffood);
+        GroceriesData mGroceriesData2 = new GroceriesData(str, str2, str3, R.drawable.fastfood);
         GroceriesData mGroceriesData3 = new GroceriesData(str, str2, str3, R.drawable.grocerie);
         GroceriesData mGroceriesData4 = new GroceriesData(str, str2, str3, R.drawable.grocerie);
         this.glocerieList.add(mGroceriesData);
