@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.jkhana.Groceries.Groceries;
+import com.example.jkhana.dinner.Dinner;
 import com.example.jkhana.fastfood.Food;
 
 import java.util.ArrayList;

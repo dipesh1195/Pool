@@ -1,34 +1,31 @@
 package com.example.jkhana.fastfood;
+
+import android.graphics.Color;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.animation.Animation;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.jkhana.R;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.example.jkhana.dinner.Tabg_1;
+import com.example.jkhana.dinner.Tabg_2;
+import com.example.jkhana.dinner.Tabg_3;
+import com.google.android.material.tabs.TabLayout;
+import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
+import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Food extends AppCompatActivity {
-    RecyclerView recyclerView;
-    FoodAdapter myAdapter;
-    List<FoodData> Foodlist;
+
+    TabLayout tabLayout;
+    ViewPager viewPager;
+    ArrayList<FoodData> Foodlist;
     FoodData modelImage;
     LinearLayoutManager linearLayoutManager;
     public String imgurl;
@@ -37,7 +34,46 @@ public class Food extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food);
+        FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
+                getSupportFragmentManager(), FragmentPagerItems.with(this)
+                .add("FastFood", Tabg_1.class)
+                .add("second Tab", Tabg_2.class)
+                .add("Thirt tab", Tabg_3.class)
 
+                .create());
+
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+
+        tabLayout.addTab(tabLayout.newTab().setText("FastFood"));
+        tabLayout.addTab(tabLayout.newTab().setText("tab2"));
+        tabLayout.addTab(tabLayout.newTab().setText("tab3"));
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        final TabAdapter tabadapter = new TabAdapter(this, getSupportFragmentManager(), tabLayout.getTabCount());
+        viewPager.setAdapter(tabadapter);
+
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+    
         ImageSlider imgslider = (ImageSlider) findViewById(R.id.sliderfood);
         List<SlideModel> slide = new ArrayList<>();
         slide.add(new SlideModel(R.drawable.grocerie,"Gloceries"));
@@ -45,68 +81,9 @@ public class Food extends AppCompatActivity {
         slide.add(new SlideModel(R.drawable.img,"Gloceries"));
         slide.add(new SlideModel(R.drawable.streetfood,"StreetFood"));
         imgslider.setImageList(slide,true)  ;
-
-
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerG);
-        linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        Foodlist = new ArrayList<>();
-        myAdapter = new FoodAdapter(this,Foodlist);
-        recyclerView.setAdapter(myAdapter);
-
-        fetchImages();
-
-
     }
 
-    public void fetchImages(){
-
-        StringRequest request = new StringRequest(Request.Method.POST,url,new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            String succes = jsonObject.getString("success");
-
-                            JSONArray jsonArray = jsonObject.getJSONArray("data");
-
-                            if(succes.equals("1")){
-                                for(int i=0;i<jsonArray.length();i++){
-                                    JSONObject object = jsonArray.getJSONObject(i);
-                                    String name = object.getString("name");
-                                    String desc = object.getString("description");
-                                    int price = object.getInt("price");
-                                    String imageurl= object.getString("picture");
-                                    imageurl = imageurl.trim();
-                                    String restuname = object.getString("resturant");
-                                    imgurl ="https://poolnepal.000webhostapp.com/upload/".concat(imageurl) ;
-                                    Toast.makeText(Food.this, imgurl, Toast.LENGTH_SHORT).show();
-                                    modelImage = new FoodData(name,desc,price,imgurl,restuname);
-                                    Foodlist.add(modelImage);
-                                    myAdapter.notifyDataSetChanged();
-                                }
-                            }
 
 
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-
-
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(Food.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(request);
-
-
-    }
 }
 

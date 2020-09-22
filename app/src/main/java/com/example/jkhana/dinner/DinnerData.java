@@ -1,6 +1,6 @@
-package com.example.jkhana.fastfood;
+package com.example.jkhana.dinner;
 
-public class FoodData {
+public class DinnerData {
     private String itemDesc;
     private String itemImage;
     private String itemName;
@@ -8,7 +8,7 @@ public class FoodData {
     private String restuname;
 
 
-    public FoodData(String itemName, String itemDesc, int itemPrice, String itemImage,String restuname) {
+    public DinnerData(String itemName, String itemDesc, int itemPrice, String itemImage, String restuname) {
         this.itemName = itemName;
         this.itemDesc = itemDesc;
         this.itemPrice = itemPrice;
@@ -35,8 +35,10 @@ public class FoodData {
 
         return this.itemImage;
     }
-    public String getRestuname()
-    {
+
+    public String getRestuname() {
         return this.restuname;
     }
 }
+
+

@@ -7,11 +7,11 @@ import android.view.View;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.ui.AppBarConfiguration;
 
 import com.andremion.floatingnavigationview.FloatingNavigationView;
+import com.example.jkhana.cart.KartFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;

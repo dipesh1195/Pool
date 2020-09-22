@@ -200,7 +200,7 @@
                     <LinearLayout
                         android:id="@+id/linearliqueur"
                         android:layout_width="65dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="5dp">
 

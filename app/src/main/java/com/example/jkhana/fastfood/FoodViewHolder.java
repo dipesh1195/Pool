@@ -1,8 +1,12 @@
 package com.example.jkhana.fastfood;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+import com.example.jkhana.fastfood.FoodAdapter;
+
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
@@ -14,9 +18,12 @@ class FoodViewHolder extends RecyclerView.ViewHolder {
     CardView card;
     ImageView image;
     TextView mdesc;
+    Button addtocart;
     TextView mprice;
     TextView mtitle;
-    TextView mrestuname;
+    TextView mrestuname,total,price;
+    Button checkout;
+
 
     public FoodViewHolder(View itemView) {
         super(itemView);
@@ -26,5 +33,11 @@ class FoodViewHolder extends RecyclerView.ViewHolder {
         this.mprice = (TextView) itemView.findViewById( R. id.price);
         this.card = (CardView) itemView.findViewById( R. id.GrocerieCardView);
         this.mrestuname = itemView.findViewById(R.id.restu);
+        this.addtocart = itemView.findViewById(R.id.cart);
+        this.total = itemView.findViewById(R.id.total);
+        this.price = itemView.findViewById(R.id.price);
+        this.checkout = itemView.findViewById(R.id.checkout);
+
+
     }
 }
