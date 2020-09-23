@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.jkhana"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="POOL"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.jkhana.cart.CartNotEmpty" />
+        <activity android:name="com.example.jkhana.Login_activity" />
+        <activity android:name="com.example.jkhana.Signup_activity" />
+        <activity android:name="com.example.jkhana.LoginPage" />
+        <activity
+            android:name="com.example.jkhana.Splash"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.jkhana.Fruits" />
+        <activity android:name="com.example.jkhana.Liqueurs" />
+        <activity android:name="com.example.jkhana.dinner.Dinner" />
+        <activity android:name="com.example.jkhana.Nonveg" />
+        <activity android:name="com.example.jkhana.Lunch" />
+        <activity android:name="com.example.jkhana.fastfood.Food" />
+        <activity android:name="com.example.jkhana.Groceries.Groceries" />
+        <activity
+            android:name="com.example.jkhana.MainActivity"
+            android:label="PooL" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.jkhana.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.jkhana.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

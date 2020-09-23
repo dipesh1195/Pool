@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:aapt="http://schemas.android.com/aapt"
+3    xmlns:android="http://schemas.android.com/apk/res/android"
+4    xmlns:app="http://schemas.android.com/apk/res-auto"
+5    package="com.example.jkhana"
+6    platformBuildVersionCode="28"
+7    platformBuildVersionName="9"
+8    android:compileSdkVersion="28"
+9    android:compileSdkVersionCodename="9"
+10    android:versionCode="1"
+11    android:versionName="0.1" >
+12
+13    <uses-sdk
+14        android:minSdkVersion="23"
+14-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml
+15        android:targetSdkVersion="29" />
+15-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml
+16
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:14:5-67
+17-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:14:22-64
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:15:5-79
+18-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:15:22-76
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:16:5-80
+19-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:16:22-77
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:17:5-81
+20-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:17:22-78
+21
+22    <application
+22-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:19:5-60:19
+23        android:allowBackup="true"
+23-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:20:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:21:9-77
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:22:9-43
+28        android:label="POOL"
+28-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:23:9-29
+29        android:largeHeap="true"
+29-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:24:9-33
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:26:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:27:9-35
+32        android:testOnly="true"
+32-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:29:9-32
+33        android:theme="@style/AppTheme"
+33-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:30:9-40
+34        android:usesCleartextTraffic="true" >
+34-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:28:9-44
+35        <activity android:name="com.example.jkhana.cart.CartNotEmpty" />
+35-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:31:9-54
+35-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:31:19-52
+36        <activity android:name="com.example.jkhana.Login_activity" />
+36-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:32:9-52
+36-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:32:19-49
+37        <activity android:name="com.example.jkhana.Signup_activity" />
+37-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:33:9-53
+37-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:33:19-50
+38        <activity android:name="com.example.jkhana.LoginPage" />
+38-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:34:9-47
+38-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:34:19-44
+39        <activity
+39-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:35:9-43:20
+40            android:name="com.example.jkhana.Splash"
+40-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:36:13-35
+41            android:theme="@style/Theme.MaterialComponents.NoActionBar" >
+41-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:37:13-72
+42            <intent-filter>
+42-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:38:13-42:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:39:17-69
+43-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:39:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:41:17-77
+45-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:41:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.example.jkhana.Fruits" />
+48-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:44:9-44
+48-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:44:19-41
+49        <activity android:name="com.example.jkhana.Liqueurs" />
+49-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:45:9-46
+49-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:45:19-43
+50        <activity android:name="com.example.jkhana.dinner.Dinner" />
+50-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:46:9-51
+50-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:46:19-48
+51        <activity android:name="com.example.jkhana.Nonveg" />
+51-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:47:9-44
+51-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:47:19-41
+52        <activity android:name="com.example.jkhana.Lunch" />
+52-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:48:9-43
+52-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:48:19-40
+53        <activity android:name="com.example.jkhana.fastfood.Food" />
+53-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:49:9-51
+53-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:49:19-48
+54        <activity android:name="com.example.jkhana.Groceries.Groceries" />
+54-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:50:9-57
+54-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:50:19-54
+55        <activity
+55-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:51:9-53:36
+56            android:name="com.example.jkhana.MainActivity"
+56-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:52:13-41
+57            android:label="PooL" />
+57-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:53:13-33
+58
+59        <provider
+59-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:55:9-59:43
+60            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+60-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:56:13-79
+61            android:authorities="com.example.jkhana.lifecycle-process"
+61-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:57:13-71
+62            android:exported="false"
+62-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:58:13-37
+63            android:multiprocess="true" />
+63-->C:\Users\Dipesh Kushwaha\Downloads\Jkhana2\Jkhana2\app\src\main\AndroidManifest.xml:59:13-40
+64        <provider
+64-->[com.squareup.picasso:picasso:2.71828] C:\Users\Dipesh Kushwaha\.gradle\caches\transforms-2\files-2.1\7ec069554e1adf63db8ae98d9f8724a0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+65            android:name="com.squareup.picasso.PicassoProvider"
+65-->[com.squareup.picasso:picasso:2.71828] C:\Users\Dipesh Kushwaha\.gradle\caches\transforms-2\files-2.1\7ec069554e1adf63db8ae98d9f8724a0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+66            android:authorities="com.example.jkhana.com.squareup.picasso"
+66-->[com.squareup.picasso:picasso:2.71828] C:\Users\Dipesh Kushwaha\.gradle\caches\transforms-2\files-2.1\7ec069554e1adf63db8ae98d9f8724a0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+67            android:exported="false" />
+67-->[com.squareup.picasso:picasso:2.71828] C:\Users\Dipesh Kushwaha\.gradle\caches\transforms-2\files-2.1\7ec069554e1adf63db8ae98d9f8724a0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+68    </application>
+69
+70</manifest>
