@@ -43,10 +43,10 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
         ImageSlider imgslider =(ImageSlider) v.findViewById(R.id.slider);
         List<SlideModel> slide = new ArrayList<>();
-        slide.add(new SlideModel(R.drawable.grocerie,"Gloceries"));
-        slide.add(new SlideModel(R.drawable.vejroll,"VejRoll"));
-        slide.add(new SlideModel(R.drawable.img,"Gloceries"));
-        slide.add(new SlideModel(R.drawable.streetfood,"StreetFood"));
+        slide.add(new SlideModel(R.drawable.fruits,"Made For Food Lovers"));
+        slide.add(new SlideModel(R.drawable.vejroll,"Get Fresh Vegatable"));
+        slide.add(new SlideModel(R.drawable.img,"Tasty FastFood"));
+        slide.add(new SlideModel(R.drawable.streetfood,"Your Favourite Restaurant always on Your Hand"));
         imgslider.setImageList(slide,true)  ;
 
 

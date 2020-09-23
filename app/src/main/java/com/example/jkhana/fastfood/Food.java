@@ -1,8 +1,6 @@
 package com.example.jkhana.fastfood;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.animation.Animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,9 +9,9 @@ import androidx.viewpager.widget.ViewPager;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.jkhana.R;
-import com.example.jkhana.dinner.Tabg_1;
-import com.example.jkhana.dinner.Tabg_2;
-import com.example.jkhana.dinner.Tabg_3;
+import com.example.jkhana.dinner.Tabd_1;
+import com.example.jkhana.dinner.Tabd_2;
+import com.example.jkhana.dinner.Tabd_3;
 import com.google.android.material.tabs.TabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
@@ -36,9 +34,9 @@ public class Food extends AppCompatActivity {
         setContentView(R.layout.activity_food);
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
-                .add("FastFood", Tabg_1.class)
-                .add("second Tab", Tabg_2.class)
-                .add("Thirt tab", Tabg_3.class)
+                .add("FastFood", Tabd_1.class)
+                .add("second Tab", Tabd_2.class)
+                .add("Thirt tab", Tabd_3.class)
 
                 .create());
 

@@ -26,11 +26,11 @@ public class KartFragment extends Fragment {
     RecyclerView recyclerView;
     CartAdapter myAdapter;
     ArrayList<FoodData> cartlist;
+    TextView clear;
     LinearLayoutManager linearLayoutManager;
     TextView total;
     Button checkout;
     int totalc= 0;
-
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_kart, container, false);
@@ -38,6 +38,13 @@ public class KartFragment extends Fragment {
         linearLayoutManager = new LinearLayoutManager(getActivity());
         total = (TextView) v.findViewById(R.id.totalcost);
         recyclerView.setLayoutManager(linearLayoutManager);
+        clear = v.findViewById(R.id.clear_all);
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Bhag Muji", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         if (abd.getlist().isEmpty()){
@@ -51,7 +58,9 @@ public class KartFragment extends Fragment {
 
         }
         myAdapter = new CartAdapter(getActivity(),cartlist);
-        recyclerView.setAdapter(myAdapter);}
+        recyclerView.setAdapter(myAdapter);
+        total.setText(String.valueOf(myAdapter.total()));
+    }
 
 
 

@@ -1,4 +1,4 @@
-package com.example.jkhana.dinner;
+package com.example.jkhana.Groceries;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -49,7 +49,7 @@ public class Tabg_1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.tablayout_home, container, false);
+        View v =  inflater.inflate(R.layout.tabd_layout1, container, false);
 
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerG);
         linearLayoutManager = new LinearLayoutManager(getContext());

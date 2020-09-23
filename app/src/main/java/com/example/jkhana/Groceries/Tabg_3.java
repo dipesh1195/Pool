@@ -1,4 +1,4 @@
-package com.example.jkhana.dinner;
+package com.example.jkhana.Groceries;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,7 +19,7 @@ public class Tabg_3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.tablayout_3, container, false);
+        View v =  inflater.inflate(R.layout.tabd_layout3, container, false);
         return v;
     }
 }

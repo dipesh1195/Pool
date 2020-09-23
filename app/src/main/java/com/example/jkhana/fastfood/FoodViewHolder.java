@@ -31,7 +31,6 @@ class FoodViewHolder extends RecyclerView.ViewHolder {
         this.mtitle = (TextView) itemView.findViewById( R. id.title);
         this.mdesc = (TextView) itemView.findViewById( R. id.Desc);
         this.mprice = (TextView) itemView.findViewById( R. id.price);
-        this.card = (CardView) itemView.findViewById( R. id.GrocerieCardView);
         this.mrestuname = itemView.findViewById(R.id.restu);
         this.addtocart = itemView.findViewById(R.id.cart);
         this.total = itemView.findViewById(R.id.total);

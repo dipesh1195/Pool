@@ -28,10 +28,12 @@ public class CartViewHolder extends RecyclerView.ViewHolder {
         itemimage = itemView.findViewById(R.id.cart_img);
         deletebtn = itemView.findViewById(R.id.delete);
         btn = itemView.findViewById(R.id.number);
-
-
-        String num = btn.getNumber();
-        quantity = Integer.parseInt(num);
+        btn.setOnValueChangeListener(new ElegantNumberButton.OnValueChangeListener() {
+            @Override
+            public void onValueChange(ElegantNumberButton view, int oldValue, int newValue) {
+                String quantity = btn.getNumber();
+            }
+        });
 
 
 

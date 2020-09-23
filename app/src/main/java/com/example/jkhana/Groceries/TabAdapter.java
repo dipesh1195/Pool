@@ -1,4 +1,4 @@
-package com.example.jkhana.dinner;
+package com.example.jkhana.Groceries;
 
 import android.content.Context;
 
@@ -23,13 +23,13 @@ public class TabAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                Tabd_1 tab1 = new Tabd_1();
+                Tabg_1 tab1 = new Tabg_1();
                 return tab1;
             case 1:
-                Tabd_2 tabg2 = new Tabd_2();
-                return tabg2;
+                Tabg_2 tab2 = new Tabg_2();
+                return tab2;
             case 2:
-                Tabd_3 tab3 = new Tabd_3();
+                Tabg_3 tab3 = new Tabg_3();
                 return tab3;
             default:
                 return null;

@@ -8,20 +8,43 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cart"
-        android:id="@+id/cart"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        android:textSize="18sp"/>
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:id="@+id/lout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:id="@+id/cart"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:id="@+id/clear_all"
+            android:textStyle="bold"
+            android:gravity="center|end"
+            android:textColor="@color/btn1_color"
+            android:layout_margin="10dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
 
    <androidx.recyclerview.widget.RecyclerView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:layout_marginBottom="60dp"
        android:id="@+id/recyclercart"
-       android:layout_below="@+id/cart"
+       android:layout_below="@+id/lout"
        >
 
    </androidx.recyclerview.widget.RecyclerView>

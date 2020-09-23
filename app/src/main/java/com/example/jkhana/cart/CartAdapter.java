@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.example.jkhana.R;
 import com.example.jkhana.fastfood.FoodAdapter;
 import com.example.jkhana.fastfood.FoodData;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     public ArrayList<FoodData> cartlist;
     FragmentActivity activity;
+    private static int sum = 0;
     public CartAdapter(FragmentActivity activity, ArrayList<FoodData> cartlist) {
         this.cartlist = cartlist;
         this.activity = activity;
@@ -36,12 +38,19 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CartViewHolder holder, final int i) {
+    public void onBindViewHolder(@NonNull final CartViewHolder holder, final int i) {
 
         Glide.with(activity).load(cartlist.get(i).getItemImage()).into(holder.itemimage);
         holder.title.setText(( cartlist.get(i)).getItemName());
         holder.price.setText("Rs. "+Integer.toString((cartlist.get(i)).getItemPrice()));
+        holder.btn.setOnValueChangeListener(new ElegantNumberButton.OnValueChangeListener() {
+            @Override
+            public void onValueChange(ElegantNumberButton view, int oldValue, int newValue) {
+                String num = holder.btn.getNumber();
+                sum += cartlist.get(i).getItemPrice() * Integer.parseInt(num);
 
+            }
+        });
         holder.deletebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +69,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     @Override
     public int getItemCount() {
         return cartlist.size();
+    }
+    public static int total(){
+        return sum;
     }
 }
 

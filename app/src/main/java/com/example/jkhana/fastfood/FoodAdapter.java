@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class FoodAdapter extends Adapter<FoodViewHolder> {
     private Context context;
     public ArrayList<FoodData> itemlist;
-    public ArrayList<FoodData> cartlist;
+    public static ArrayList<FoodData> cartlist = new ArrayList<FoodData>();;
     FoodData cart;
 
     public FoodAdapter(Context context, ArrayList<FoodData> itemList) {
@@ -39,8 +39,7 @@ public class FoodAdapter extends Adapter<FoodViewHolder> {
         holder.addtocart.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    cart = new FoodData(itemlist.get(i).getItemName(), itemlist.get(i).getItemDesc(), itemlist.get(i).getItemPrice(), itemlist.get(i).getItemImage(), itemlist.get(i).getRestuname());
-                    cartlist = new ArrayList<FoodData>();
+                    cart = new FoodData(itemlist.get(i).getItemName(), itemlist.get(i).getItemDesc(),itemlist.get(i).getItemPrice(), itemlist.get(i).getItemImage(), itemlist.get(i).getRestuname());
                     cartlist.add(cart);
                     new abd(cartlist);
                     holder.addtocart.setText("Item added to cart");
@@ -49,8 +48,10 @@ public class FoodAdapter extends Adapter<FoodViewHolder> {
                 }
             });
         }
+        public static ArrayList<FoodData> cartitem(){
+        return cartlist;
+        }
     public int getItemCount() {
-
         return this.itemlist.size();
     }
 }

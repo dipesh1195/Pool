@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.jkhana.R;
 
-public class Tabg_2 extends Fragment {
-    public Tabg_2() {
+public class Tabd_2 extends Fragment {
+    public Tabd_2() {
         // Required empty public constructor
     }
 
